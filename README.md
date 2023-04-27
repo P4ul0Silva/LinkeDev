@@ -24,6 +24,7 @@ A aplicação será desenvolvida em Typescript e React. Utilizando as seguintes 
 - React toastify
 - Axios
 - React Framer Motion
+- Json-server
 
 ### Quais ferramentas serão utilizadas ? (Ex: Trello, Notion, JSON Server, etc.)
 Será utilizado o Trello para organização do quadro Scrum, o código será versionado usando git e a plataforma Github utilizando conventional commits.
