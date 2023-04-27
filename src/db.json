@@ -1,0 +1,241 @@
+{
+  "users": [
+    {
+      "email": "gabriel@email.com",
+      "password": "$2a$10$VWiXFpKqgy8of25xiHH8Vui/dVPB1O6IFgoxK6HqPapV9EH6PjUNW",
+      "name": "Gabriel Martins",
+      "level": "Sênior",
+      "title": "Desenvolvedor Frontend",
+      "stacks": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "bio": "Lorem ipsum dolor emet",
+      "social": "github/johndoe",
+      "avatar_url": "https://avatar.png",
+      "id": 1
+    },
+    {
+      "email": "agnes@email.com",
+      "password": "$2a$10$jGP6Douzntq9TzRN6LR2MOnXbXPefLzpYP.n0L8S0f9/kkxLtw3i.",
+      "name": "Agnes Rogério",
+      "level": "Sênior",
+      "title": "Desenvolvedor Frontend",
+      "stacks": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "bio": "Lorem ipsum dolor emet",
+      "social": "github/johndoe",
+      "avatar_url": "https://avatar.png",
+      "id": 2
+    },
+    {
+      "email": "thais@email.com",
+      "password": "$2a$10$6yReqABOEYFCxcKaBm/64OKN5MS.7QUr9XZKj0aHDDXMvSl7AHkjq",
+      "name": "Thaís Sales",
+      "level": "Sênior",
+      "title": "Desenvolvedor Frontend",
+      "stacks": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "bio": "Lorem ipsum dolor emet",
+      "social": "github/johndoe",
+      "avatar_url": "https://avatar.png",
+      "id": 3
+    },
+    {
+      "email": "naimy@email.com",
+      "password": "$2a$10$RUOth8CA26VWVmo8akJbXeA4csrQZnnvVGiM9jk7dQ71Sd0wCbtCC",
+      "name": "Naimy Prestes",
+      "level": "Sênior",
+      "title": "Desenvolvedor Frontend",
+      "stacks": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "bio": "Lorem ipsum dolor emet",
+      "social": "github/johndoe",
+      "avatar_url": "https://avatar.png",
+      "id": 4
+    },
+    {
+      "email": "paulo@email.com",
+      "password": "$2a$10$uYEYoUwWNC6icA9ujC3Ir.7wFwqVpH/Ar/42cESTugobtAm.rra1u",
+      "name": "Paulo Silva",
+      "level": "",
+      "title": "Desenvolvedor Frontend",
+      "stacks": "HTML, CSS, JavaScript",
+      "bio": "Lorem ipsum dolor emet",
+      "social": "github/johndoe",
+      "avatar_url": "https://avatar.png",
+      "id": 5,
+      "avatar_URL": "https://media.licdn.com/dms/image/D4D35AQE-ueYwcLShRw/profile-framedphoto-shrink_200_200/0/1681471278228?e=1682618400&v=beta&t=hOSV2hg2Yxfb5kHOZHVlxcTq5kuLWMRJS4TtLEXGb4g"
+    },
+    {
+      "email": "paulo-recruiter@email.com",
+      "password": "$2a$10$dqRbJGb.4yv9PULBrl5wqeTM8Fd8WwvO4Tal4lIXkKrG7YqYcvfRe",
+      "name": "Paulo Silva",
+      "company": "Google",
+      "social": "github/johndoe",
+      "avatar_url": "https://avatar.png",
+      "is_recruiter": true,
+      "id": 6
+    },
+    {
+      "email": "naimy-recruiter@email.com",
+      "password": "$2a$10$XbKEKXfakwLwbUe8TDXj1OVEJkwhBQUZAMQAAWgx9Ls3iat/JpMrq",
+      "name": "Naimy Prestes",
+      "company": "Google",
+      "social": "github/johndoe",
+      "avatar_url": "https://avatar.png",
+      "is_recruiter": true,
+      "id": 7
+    },
+    {
+      "email": "agnes-recruiter@email.com",
+      "password": "$2a$10$Cv7K5r2fROkq76mIPSMOf.GNXxmaqucf.9DkZtwM7UT8BfGir8Dry",
+      "name": "Agnes Rogério",
+      "company": "Google",
+      "social": "github/johndoe",
+      "avatar_url": "https://avatar.png",
+      "is_recruiter": true,
+      "id": 8
+    },
+    {
+      "email": "thais-recruiter@email.com",
+      "password": "$2a$10$spUVBmpOhJzQiTQHPIX3eeXim72/4VQa6gdvaystXnXBYUFVpDv2K",
+      "name": "Thaís Sales",
+      "company": "Google",
+      "social": "github/johndoe",
+      "avatar_url": "https://avatar.png",
+      "is_recruiter": true,
+      "id": 9
+    },
+    {
+      "email": "gabriel-recruiter@email.com",
+      "password": "$2a$10$CuAB7zX5AaFvv9G3OvpZHeroGXDBSGqOBI/Ff1gvvOcLtEGNWtz/C",
+      "name": "Gabriel Martins",
+      "company": "Google",
+      "social": "github/johndoe",
+      "avatar_url": "https://avatar.png",
+      "is_recruiter": true,
+      "id": 10
+    }
+  ],
+  "jobs": [
+    {
+      "title": "Desenvolvedor Full Stack",
+      "description": "Procuramos um Júnior para trabalhar como desenvolvedor Full Stack",
+      "place": "Belo Horizonte",
+      "salary": "3000",
+      "level": "Júnior",
+      "stacks": [
+        "HTML",
+        "CSS",
+        "JAVASCRIPT",
+        "DOCK",
+        "NODE"
+      ],
+      "type": "CLT",
+      "reputation": 0,
+      "candidates": [
+        {
+          "email": "paulo@email.com",
+          "name": "Paulo Silva",
+          "level": "Júnior",
+          "title": "Desenvolvedor Frontend",
+          "stacks": "HTML,CSS,JavaScript",
+          "bio": "Lorem ipsum dolor emet",
+          "social": "github/johndoe",
+          "avatar_url": "https://avatar.png",
+          "id": 5,
+          "avatar_URL": "https://media.licdn.com/dms/image/D4D35AQE-ueYwcLShRw/profile-framedphoto-shrink_200_200/0/1681471278228?e=1682618400&v=beta&t=hOSV2hg2Yxfb5kHOZHVlxcTq5kuLWMRJS4TtLEXGb4g"
+        }
+      ],
+      "userId": "6",
+      "date": "20/04/2023",
+      "id": 1
+    },
+    {
+      "title": "Desenvolvedor Front End",
+      "description": "Procuramos um desenvolvedor front end em React para o desenvolvimento de soluçoes para nosso site.",
+      "place": "São Paulo",
+      "salary": "3000",
+      "level": "Júnior",
+      "stacks": [
+        "HTML",
+        "CSS",
+        "JAVASCRIPT",
+        "HTML",
+        "REACT",
+        "HTML"
+      ],
+      "type": "Remoto",
+      "reputation": 0,
+      "candidates": [
+        {
+          "email": "paulo@email.com",
+          "name": "Paulo Silva",
+          "level": "Júnior",
+          "title": "Desenvolvedor Frontend",
+          "stacks": "HTML,CSS,JavaScript",
+          "bio": "Lorem ipsum dolor emet",
+          "social": "github/johndoe",
+          "avatar_url": "https://avatar.png",
+          "id": 5,
+          "avatar_URL": "https://media.licdn.com/dms/image/D4D35AQE-ueYwcLShRw/profile-framedphoto-shrink_200_200/0/1681471278228?e=1682618400&v=beta&t=hOSV2hg2Yxfb5kHOZHVlxcTq5kuLWMRJS4TtLEXGb4g"
+        }
+      ],
+      "userId": "6",
+      "date": "20/04/2023",
+      "id": 2
+    },
+    {
+      "title": "Cientista de Dados",
+      "description": "Trabalhar com dados em Python",
+      "place": "São Paulo",
+      "salary": "5000",
+      "level": "Pleno",
+      "stacks": [],
+      "type": "Remoto",
+      "reputation": 0,
+      "candidates": [
+        {
+          "email": "paulo@email.com",
+          "name": "Paulo Silva",
+          "level": "Júnior",
+          "title": "Desenvolvedor Frontend",
+          "stacks": "HTML,CSS,JavaScript",
+          "bio": "Lorem ipsum dolor emet",
+          "social": "github/johndoe",
+          "avatar_url": "https://avatar.png",
+          "id": 5,
+          "avatar_URL": "https://media.licdn.com/dms/image/D4D35AQE-ueYwcLShRw/profile-framedphoto-shrink_200_200/0/1681471278228?e=1682618400&v=beta&t=hOSV2hg2Yxfb5kHOZHVlxcTq5kuLWMRJS4TtLEXGb4g"
+        }
+      ],
+      "userId": "6",
+      "date": "20/04/2023",
+      "id": 3
+    },
+    {
+      "title": "Programador PHP",
+      "description": "Trabalhar com PHP e frameworks de php.",
+      "place": "Belo Horizonte",
+      "salary": "3000",
+      "level": "Junior",
+      "stacks": [],
+      "type": "Hibrido",
+      "reputation": 0,
+      "candidates": [],
+      "userId": "6",
+      "date": "20/04/2023",
+      "id": 4
+    }
+  ]
+}
