@@ -32,6 +32,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.0.8",
+    "serve": "^14.2.0",
     "styled-components": "^5.3.5",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0",
@@ -41,7 +42,7 @@
     "start": "concurrently \"react-scripts start\" \"json-server-auth ./src/db.json -p 3001 -r ./src/routes.json\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "serve": "serve -s build",
+    "serve": "concurrently \"serve -s build\" \"json-server-auth ./src/db.json -p 3001 -r ./src/routes.json\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
