@@ -39,7 +39,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"json-server-auth ./src/db.json -p 3001 -r ./src/routes.json\"",
+    "start-concurrently": "concurrently \"react-scripts start\" \"json-server-auth ./src/db.json -p 3001 -r ./src/routes.json\"",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "serve": "concurrently \"serve -s build\" \"json-server-auth ./src/db.json -p 3001 -r ./src/routes.json\"",
