@@ -1,28 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import { Container } from "./style";
-import Logo from "../../assets/LogoPC_light.svg"
-import MainImage from "../../assets/newLogoLinke.svg"
+import LandingPageComponent from "../LandingPageComponent";
+import Header from "../Header";
 
 function LandingPageLayoutPC() {
   const navigate = useNavigate();
 
   return (
     <Container>
-      <section className="headerLanding">
-        <div>
-          <img src={Logo} alt="Logo LinkeDev" />
-          <h3>A maior plataforma de contratações tech!</h3>
-        </div>
-        <div>
-          <button onClick={() => navigate("/login")}>Entrar</button>
-        </div>
-      </section>
-
-      <section className="mainLanding">
-        <div>
-          <img src={MainImage} alt="logo Login" />
-        </div>
-        <div>
+      <Header/>
+      <LandingPageComponent>
+        <section className="signUpSection">
           <p>
             Você é Dev? Procure vagas, converse com recrutadores e seja
             contratado!
@@ -32,12 +20,14 @@ function LandingPageLayoutPC() {
             de todo o brasil em um só lugar!
           </p>
           <p>
-            Como Recruiter você pode coversar com vários techs e achar aquele
+            Como Recruiter você pode coversar com vários devs e achar aquele
             que mais se encaixa no perfil da sua empresa!
           </p>
-          <button className="signupBtn" onClick={() => navigate("/options")}>Cadastrar</button>
-        </div>
-      </section>
+          <div className="signUpDiv">
+            <button className="signupBtn" onClick={() => navigate("/options")}>Cadastrar</button>
+          </div>
+        </section>
+      </LandingPageComponent>
     </Container>
   );
 }

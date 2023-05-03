@@ -42,7 +42,6 @@ export const Container = styled.section`
     background-image: url("./vector.svg");
     background-repeat: no-repeat;
     background-size: 100% 100vh;
-    backg
   }
 
   button {

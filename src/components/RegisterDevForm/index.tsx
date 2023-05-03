@@ -3,9 +3,11 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { UserContext } from "../../providers/User/UserContext";
-import { Container, Form, Header } from "./style";
+import { Container, Form } from "./style";
 import RegisterDevRecPage from "../RegisterDevRecPage";
 import InputStacks from "../InputStacks";
+import Header from "../Header";
+import LandingPageComponent from "../LandingPageComponent";
 
 interface IRegisterDev {
   name: string;
@@ -60,24 +62,8 @@ const DevForm = () => {
   return (
     <>
       <Container page={page}>
-        <Header>
-          <img className="logoLinke" src="./LogoPC_light.svg" alt="LinkeDev" />
-        </Header>
-        <div className="div">
-          <div className="divImgDesktop">
-            <img
-              className="logoLinke2"
-              src="./LogoPC_light.svg"
-              alt="LinkeDev"
-            />
-            <h3>A maior plataforma de contratações tech!</h3>
-            <img
-              className="imgLogin"
-              src="./newLogoLinke.svg"
-              alt="Logo Login"
-            />
-          </div>
-
+        <Header/>
+          <LandingPageComponent>
           <div className="divRegister">
             <h2>Cadastro de Dev!</h2>
 
@@ -182,7 +168,7 @@ const DevForm = () => {
               </div>
             </Form>
           </div>
-        </div>
+          </LandingPageComponent>
       </Container>
       {backDev && <RegisterDevRecPage />}
     </>

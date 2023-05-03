@@ -15,8 +15,9 @@ export const Container = styled.section`
 
   .recruiterContainer {
     display: flex;
-    margin: 30px;
-    justify-content: space-evenly;
+    margin: 1.9rem 8.5%;
+    /* gap: 75px; */
+    justify-content: space-between;
   }
 
   .recruiterMain {

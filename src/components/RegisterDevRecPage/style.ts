@@ -123,7 +123,6 @@ export const Div = styled.div`
     flex-direction: column;
     position: relative;
     align-items: center;
-    top: 80px;
     color: var(--gray-color-3);
     text-align: center;
     gap: 40px;
@@ -187,7 +186,6 @@ export const Div = styled.div`
     .text {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
       text-align: start;
       gap: 50px;
       /* margin-bottom: 100px; */

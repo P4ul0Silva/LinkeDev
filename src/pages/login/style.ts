@@ -10,15 +10,7 @@ export const Container = styled.div<Props>`
   width: 100vw;
   min-height: 100vh;
   background-color: var(--gray-color-0);
-  /* display: ${(props) => {
-    if (props.page) return "block";
-    else return "none";
-  }}; */
-  /* display: flex; */
-
-  .div {
-    margin: auto;
-  }
+  justify-content: space-between;
 
   .buttonBack {
     display: flex;
@@ -45,14 +37,24 @@ export const Container = styled.div<Props>`
     border: 1px solid var(--gray-color-3);
   }
 
+  .landingImageContainer {
+    display: flex;
+  }
+
+  .landingImage {
+    filter: blur(4px);
+  }
+
   .divLogin {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .imgLogin {
-    display: none;
+    position: absolute;
+    right: 0vw;
+    top: 35vh;
+    background-color: rgba(202, 178, 206, 0.9);
+    color: white;
   }
 
   h2 {
@@ -69,12 +71,7 @@ export const Container = styled.div<Props>`
   }
 
   h3 {
-    /* visibility: hidden; */
     font-weight: 200;
-  }
-
-  .logoLinke2 {
-    display: none;
   }
 
   @media (min-width: 900px) {
@@ -83,25 +80,13 @@ export const Container = styled.div<Props>`
       else return "none";
     }};
     flex-direction: column;
-    /* justify-content: flex-end; */
+    justify-content: space-between;
+    min-height: 100vh;
 
     .div {
       display: flex;
       flex-direction: row;
-      /* justify-content: space-evenly; */
       
-    }
-    .divImgDesktop {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .logoLinke2 {
-      display: flex;
-      width: 350px;
-      height: 120px;
-      /* margin-left: 21px; */
     }
 
     h3 {
@@ -109,48 +94,43 @@ export const Container = styled.div<Props>`
       font-size: 18px;
       font-weight: 300;
       margin-bottom: 60px;
-      /* margin-left: 40px; */
-    }
-
-    .imgLogin {
-      display: flex;
-      width: 100vh;
-      /* margin-top: 80px; */
     }
 
     .divLogin {
-      /* margin-right: 20px; */
       display: flex;
       justify-content: center;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 50vw;
+      background-color: transparent;
+      color: black;
+    }
+
+    .landingImage {
+      width: 100%;
+      filter: none;
+
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 900px) {
+    display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
+    justify-content: space-between;
+    min-height: 100vh;
+
     .div {
       margin: 0px 8.5%;
       height: 100vh;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      /* justify-content: space-evenly; */
     }
 
     h3 {
       text-align: center;
       margin-bottom: 10px;
-      /* margin-left: 40px; */
-    }
-
-    .imgLogin {
-      display: flex;
-      width: 88.6%;
-      /* margin-top: 10px; */
-    }
-
-    .divLogin {
-      /* margin-right: 40px; */
     }
 
     h2 {
@@ -158,23 +138,47 @@ export const Container = styled.div<Props>`
       height: 38px;
       font-size: 14px;
     }
+
+    .divLogin {
+      width: 50vw;
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+
+    .mainLanding {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .landingImageContainer {
+      display: flex;
+    }
+
+    @media screen and (max-height: 768px) {
+      .landingImage {
+      width: 100%;
+      min-width: 50vw;
+    }
+    }
+    
   }
 `;
 
-export const Header = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+// export const Header = styled.header`
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
 
-  .logoLinke {
-    width: 258px;
-    margin-top: 20px;
-  }
+//   .logoLinke {
+//     width: 258px;
+//     margin-top: 20px;
+//   }
 
-  @media (min-width: 900px) {
-    display: none;
-  }
-`;
+//   @media (min-width: 900px) {
+//     display: none;
+//   }
+// `;
 
 export const Form = styled.form`
   display: flex;
@@ -238,6 +242,7 @@ export const Form = styled.form`
     border: 1px solid var(--primary-2-color);
     font-size: 16px;
     font-weight: 500;
+    padding: 0px;
   }
 
   .buttonLogin:hover {
@@ -248,7 +253,7 @@ export const Form = styled.form`
     margin-bottom: 40px;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 900px) {
     width: 300px;
 
     input {

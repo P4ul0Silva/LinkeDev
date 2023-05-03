@@ -46,7 +46,6 @@ body{
     -webkit-font-smoothing: antialiased;
     font-family: var(--font-family-1);
     width: 100%;
-
     overflow-x: hidden;
 }
 
@@ -69,7 +68,7 @@ button:hover{
 }
 
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-track{

@@ -3,8 +3,10 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { UserContext } from "../../providers/User/UserContext";
-import { Container, Form, Header } from "./style";
+import { Container, Form} from "./style";
 import { useNavigate } from "react-router-dom";
+import LandingPageComponent from "../../components/LandingPageComponent";
+import Header from "../../components/Header";
 
 interface IRegister {
   name: string;
@@ -37,23 +39,8 @@ const Login = () => {
   return (
     <>
       <Container page={page}>
-        <Header>
-          <img className="logoLinke" src="./LogoPC_light.svg" alt="LinkeDev" />
-        </Header>
-        <div className="div">
-          <div className="divImgDesktop">
-            <img
-              className="logoLinke2"
-              src="./LogoPC_light.svg"
-              alt="LinkeDev"
-            />
-            <img
-              className="imgLogin"
-              src="./newLogoLinke.svg"
-              alt="Logo Login"
-            />
-          </div>
-
+        <Header/>
+        <LandingPageComponent>
           <div className="divLogin">
           <h3>A maior plataforma de contratações tech!</h3>
             <h2>Login</h2>
@@ -61,7 +48,8 @@ const Login = () => {
             <Form onSubmit={handleSubmit(handleLogin)}>
               <label htmlFor="email">Email</label>
               <input
-                type="text"
+                autoComplete="email"
+                type="email"
                 id="email"
                 placeholder="exemplo@email.com"
                 {...register("email")}
@@ -87,7 +75,7 @@ const Login = () => {
               </div>
             </Form>
           </div>
-        </div>
+        </LandingPageComponent>
       </Container>
     </>
   );

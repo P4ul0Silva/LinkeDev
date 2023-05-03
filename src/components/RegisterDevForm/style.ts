@@ -5,14 +5,16 @@ interface Props {
 }
 
 export const Container = styled.div<Props>`
-  /* width: 100vw;
-  min-height: 100vh; */
+  min-height: 100vh;
   background-color: var(--gray-color-0);
   color: var(--gray-color-3);
   display: ${(props) => {
-    if (props.page) return "block";
+    if (props.page) return "flex";
     else return "none";
   }};
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 
   .buttonBack {
     text-decoration: none;
@@ -22,10 +24,11 @@ export const Container = styled.div<Props>`
 
     width: 120px;
     height: 40px;
-    margin-top: 10px;
     border-radius: 8px;
     font-size: 16px;
     font-weight: 600;
+    margin-top: 5px;
+    padding: 0px;
   }
 
   .buttonBack:hover {
@@ -39,9 +42,10 @@ export const Container = styled.div<Props>`
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
   }
 
-  .imgLogin {
+  .landingImage {
     display: none;
   }
 
@@ -51,7 +55,6 @@ export const Container = styled.div<Props>`
     padding: 10px;
     background-color: var(--primary-2-color);
     border-radius: 10px 10px 0px 0px;
-    margin-top: 20px;
     color: var(--gray-color-0);
     font-size: 14px;
     font-weight: 700;
@@ -62,8 +65,18 @@ export const Container = styled.div<Props>`
     visibility: hidden;
   }
 
-  .logoLinke2 {
-    display: none;
+  @media screen and (max-height: 768px) {
+    .landingImage {
+      width: 100%;
+      min-width: 50vw;
+      /* display: flex; */
+    }
+
+    @media screen and(max-width: 900px) {
+      .landingImage {
+        display: none;
+      }
+    }
   }
 
   @media (min-width: 900px) {
@@ -72,26 +85,14 @@ export const Container = styled.div<Props>`
       else return "none";
     }};
     flex-direction: column;
-    /* justify-content: flex-end; */
+    min-height: 100vh;
+    justify-content: space-between;
 
-    .div {
+    .landingImage {
+      width: 100%;
+      min-width: 50vw;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      /* margin-right: 20px; */
     }
-    .divImgDesktop {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .logoLinke2 {
-      display: flex;
-      width: 350px;
-      height: 120px;
-      /* margin-left: 20px;
-      margin-top: 22px; */
     }
 
     h3 {
@@ -100,63 +101,58 @@ export const Container = styled.div<Props>`
     margin: -12px 0px 0px 20px;
     }
 
-    .imgLogin {
-      display: flex;
-      width: 580px;
-      /* margin: 22px 0px 0px 0px */
-    }
-
     .divRegister {
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      margin-right: 20px;
-      margin-bottom: 20px;
+      width: 50vw;
     }
+
+
+  @media (min-width: 900px) {
+
+  .mainLanding {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
-  @media (min-width: 1100px) {
-    .div {
-      display: flex;
-      margin: 0px 8.5%;
-      flex-direction: row;
-      justify-content: space-between;
-      height: 100vh;
-    }
-
-    .imgLogin {
-      display: flex;
-      /* width: 100vh; */
-      width: 90.8%;
-    }
+  .landingImageContainer {
+    display: flex;
+  }
 
     h2 {
       width: 300px;
       height: 38px;
       font-size: 14px;
     }
+
+    .landingImage {
+      width: 100%;
+      min-width: 50vw;
+      display: flex;
+    }
   }
 `;
 
-export const Header = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+// export const Header = styled.header`
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
 
-  .logoLinke {
-    width: 250px;
-    margin-top: 20px;
-  }
+//   .logoLinke {
+//     width: 250px;
+//     margin-top: 20px;
+//   }
 
-  @media (min-width: 900px) {
-    display: none;
-  }
-`;
+//   @media (min-width: 900px) {
+//     display: none;
+//   }
+// `;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
   width: 280px;
 
   label {
@@ -234,17 +230,17 @@ export const Form = styled.form`
     width: 120px;
     height: 40px;
     margin-right: 2px;
-    margin-top: 10px;
     border-radius: 8px;
     font-size: 16px;
+    margin-top: 5px;
+    padding:0px;
   }
 
   .buttonRegister:hover {
     background-color: var(--primary-focus-color);
   }
 
-  @media (min-width: 1100px) {
-    margin-bottom: 10px;
+  @media (min-width: 900px) {
     width: 300px;
 
     label {

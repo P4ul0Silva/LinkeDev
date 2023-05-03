@@ -3,8 +3,10 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { UserContext } from "../../providers/User/UserContext";
-import { Container, Form, Header } from "./style";
+import { Container, Form } from "./style";
 import RegisterDevRecPage from "../RegisterDevRecPage";
+import Header from "../Header";
+import LandingPageComponent from "../LandingPageComponent";
 
 interface IRegisterRecruiter {
   name: string;
@@ -53,24 +55,12 @@ const RecruiterForm = () => {
 
   return (
     <>
-      <Container page={page}>
-        <Header>
-          <img className="logoLinke" src="./LogoPC_light.svg" alt="LinkeDev" />
-        </Header>
-        <div className="div">
-          <div className="divImgDesktop">
-            <img className="logoLinke2" src="./LogoPC_light.svg" alt="LinkeDev" />
-            <h3>A maior plataforma de contratações tech!</h3>
-            <img
-              className="imgLogin"
-              src="./newLogoLinke.svg"
-              alt="Logo Login"
-            />
-          </div>
-
+      {backDev ? (<RegisterDevRecPage/>) : (
+        <Container page={page}>
+          <Header/>
+          <LandingPageComponent>
           <div className="divRegister">
             <h2>Cadastro de Tech Recruiter!</h2>
-
             <Form onSubmit={handleSubmit(handleRegister)}>
               <label htmlFor="name">Nome</label>
               <input
@@ -151,9 +141,9 @@ const RecruiterForm = () => {
               </div>
             </Form>
           </div>
-        </div>
+          </LandingPageComponent>
       </Container>
-      {backDev && <RegisterDevRecPage />}
+      )}
     </>
   );
 };
