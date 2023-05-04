@@ -39,10 +39,13 @@ export const Container = styled.div<Props>`
 
   .landingImageContainer {
     display: flex;
+    /* width: 100vw; */
+    overflow: hidden;
   }
 
   .landingImage {
     filter: blur(4px);
+    object-fit: cover;
   }
 
   .divLogin {
@@ -108,9 +111,7 @@ export const Container = styled.div<Props>`
     }
 
     .landingImage {
-      width: 100%;
       filter: none;
-
     }
   }
 
@@ -148,7 +149,7 @@ export const Container = styled.div<Props>`
 
     .mainLanding {
       display: flex;
-      justify-content: space-between;
+      /* justify-content: space-between; */
     }
 
     .landingImageContainer {

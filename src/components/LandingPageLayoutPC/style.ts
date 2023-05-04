@@ -17,7 +17,6 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 10px;
     gap: 30px;
     width: 50vw;
 
