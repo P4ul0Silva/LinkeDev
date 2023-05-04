@@ -1,7 +1,6 @@
 import axios from "axios";
-const PROD_ENV = process.env.VERCEL_ENV === "production" || process.env.VERCEL_ENV === "development";
 const api = axios.create({
-  baseURL: PROD_ENV ? "https://linkedev-fake-api.vercel.app/" : "http://localhost:3001",
+  baseURL: process.env.NODE_ENV ? "http://localhost:3001" : "https://linkedev-fake-api.vercel.app/",
   timeout: 5000,
 });
 
