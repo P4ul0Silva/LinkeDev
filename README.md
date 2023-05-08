@@ -1,5 +1,5 @@
 # Projeto Front-End - Linkedev
-
+![Captura de tela de 2023-05-04 14-20-44](https://user-images.githubusercontent.com/79770252/236280866-f78f315f-c4eb-48e1-9e72-bbeda39f2173.png)
 ### Qual o problema a ser solucionado ?
 Tech Recruiters hoje tem a difícil tarefa de encontrar desenvolvedores qualificados para preencher as diversas vagas que possuem, então passam a abordar de forma incisiva perfis que acreditam ser potenciais candidatos mas estes nem sempre estão procurando colocação ou interessados. Na nossa aplicação fazemos uma ponte entre desenvolvedores que estão de fato procurando uma vaga e podem demonstrar interesse baseado nas informações adicionadas pelo tech recruiter, assim ele aborda perfis de foma mais assertiva e tem mais chance de sucesso em preencher a vaga.
 
@@ -7,6 +7,8 @@ Tech Recruiters hoje tem a difícil tarefa de encontrar desenvolvedores qualific
 Facilitar o contato entre desenvolvedores interessados em vagas e os recrutadores detentores das vagas em questão.
 
 ### Quais as features da aplicação que foram planejadas ?
+![Captura de tela de 2023-05-04 14-23-58](https://user-images.githubusercontent.com/79770252/236281569-0cb119ac-5a55-4a88-9228-fd0b44a45f29.png)
+
 Documentação da Api: https://github.com/projeto-frontend/linkedev-api
 <p>Desenvolvedor consegue:</p>
 Se cadastrar, fazer login, editar/atualizar perfil, visualizar vagas, reagir com interesse às vagas, filtrar e buscar vagas
