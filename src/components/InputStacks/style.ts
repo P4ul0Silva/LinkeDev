@@ -23,6 +23,7 @@ export const Tags = styled.ul`
 			display: inline;
 			width: fit-content;
 			border-radius: 4px;
+			padding: 0px 2px;
 			border: 1px solid var(--primary-3-color);
 			color: var(--primary-3-color);
 		}

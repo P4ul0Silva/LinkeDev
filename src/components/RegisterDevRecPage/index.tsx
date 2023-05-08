@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import DevForm from "../RegisterDevForm";
 import RecruiterForm from "../RegisterRecruiterForm";
-import { Container, Div, Header } from "./style";
-import Logo from "../../assets/LogoPC_light.svg"
+import { Container, Div } from "./style";
 
 const RegisterDevRecPage = () => {
   const [value, setValue] = useState("");
