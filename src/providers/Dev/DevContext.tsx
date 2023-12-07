@@ -85,7 +85,8 @@ function DevProvider({ children }: DevProps) {
         toast.success("perfil atualizado com sucesso!");
       })
       .catch((err) => {
-        toast.error("Erro ao atualizar perfil!");
+        console.log(err)
+        toast.error(`Erro ao atualizar perfil: ${err.message}`);
       });
   };
 
