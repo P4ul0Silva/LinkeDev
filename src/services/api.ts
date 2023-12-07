@@ -1,6 +1,6 @@
 import axios from "axios";
 const api = axios.create({
-  baseURL: "https://linkedev-fake-api.vercel.app/",
+  baseURL: "http://localhost:3001",
   timeout: 5000,
 });
 
